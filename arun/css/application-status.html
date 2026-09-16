@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your Arun Tech job applications.">
+    <title>Application Status | Arun Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="../index.html" aria-label="Arun Tech home">ARUN <span>TECH</span></a>
+        <nav aria-label="Applicant navigation">
+            <a href="../index.html">Home</a>
+            <a href="careers.html">Careers</a>
+            <a class="nav-cta" href="applicant-dashboard.html">Dashboard <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="status-page" aria-labelledby="status-title">
+        <section class="status-heading">
+            <p class="eyebrow">Applicant portal</p>
+            <h1 id="status-title">Application<br><em>status.</em></h1>
+            <p>Here is the latest view of your submitted applications on this device.</p>
+        </section>
+
+        <section class="status-panel" aria-labelledby="recent-applications-title">
+            <div class="panel-heading">
+                <h2 id="recent-applications-title">Recent applications</h2>
+                <a class="text-link" href="job-application.html">Apply for a role <span aria-hidden="true">↗</span></a>
+            </div>
+            <div data-application-list></div>
+        </section>
+    </main>
+
+    <footer><p>© 2026 Arun Tech</p><p>Build with purpose.</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>

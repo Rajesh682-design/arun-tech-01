@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your Arun Tech applicant account.">
+    <title>Applicant Registration | Arun Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="../index.html" aria-label="Arun Tech home">ARUN <span>TECH</span></a>
+    <nav aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="careers.html">Careers</a>
+    </nav>
+</header>
+
+<main class="register-page">
+    <section class="register-intro">
+        <p class="eyebrow">Your next chapter starts here</p>
+        <h1>Applicant<br><em>account.</em></h1>
+        <p>Create your profile to apply for opportunities at Arun Tech.</p>
+    </section>
+
+    <form class="register-form" data-form="registration" aria-describedby="registration-note">
+        <div class="form-field">
+            <label for="full-name">Full name</label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+            <label for="phone">Mobile number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+        <div class="form-field">
+            <label for="password">Create password</label>
+            <div class="password-control">
+                <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                <button class="password-toggle" type="button" data-toggle-password="password" aria-label="Show password">Show</button>
+            </div>
+        </div>
+        <div class="form-field">
+            <label for="confirm-password">Confirm password</label>
+            <div class="password-control">
+                <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+                <button class="password-toggle" type="button" data-toggle-password="confirm-password" aria-label="Show confirmed password">Show</button>
+            </div>
+        </div>
+        <button class="btn" type="submit">Create account <span aria-hidden="true">↗</span></button>
+        <p class="form-note" id="registration-note">Use at least 8 characters. By registering, you agree to be contacted about relevant opportunities.</p>
+    </form>
+</main>
+
+<footer>
+    <p>© 2026 Arun Tech</p>
+    <p>Build with purpose.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

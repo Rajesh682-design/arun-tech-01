@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Contact Arun Tech.">
+	<title>Contact Us | Arun Tech</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+		<a class="logo" href="../index.html" aria-label="Arun Tech home">ARUN <span>TECH</span></a>
+		<nav aria-label="Main navigation">
+			<a href="../index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="careers.html">Careers</a>
+			<a class="nav-cta" href="register.html">Get started <span aria-hidden="true">↗</span></a>
+		</nav>
+	</header>
+
+	<main class="contact-page" aria-labelledby="contact-title">
+		<section class="contact-intro">
+			<p class="eyebrow">Start a conversation</p>
+			<h1 id="contact-title">Let’s make<br><em>something useful.</em></h1>
+			<p>Have a project, question, or idea? Tell us a little about it and our team will get back to you.</p>
+		</section>
+
+		<section class="contact-grid">
+			<div class="contact-details">
+				<p class="eyebrow">Reach us</p>
+				<a href="mailto:hello@aruntech.example">hello@aruntech.example</a>
+				<p>Bangalore · Hosur · Chennai</p>
+				<p class="contact-note">We welcome thoughtful questions, ambitious ideas, and new collaborations.</p>
+			</div>
+
+			<form class="contact-form" data-form="contact">
+				<div class="form-field">
+					<label for="name">Your name</label>
+					<input id="name" name="name" type="text" autocomplete="name" required>
+				</div>
+				<div class="form-field">
+					<label for="email">Email address</label>
+					<input id="email" name="email" type="email" autocomplete="email" required>
+				</div>
+				<div class="form-field">
+					<label for="contact-phone">Contact number</label>
+					<input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+() .-]{7,}" placeholder="+91 98765 43210" required>
+				</div>
+				<div class="form-field full-field">
+					<label for="message">Your message</label>
+					<textarea id="message" name="message" rows="6" required></textarea>
+				</div>
+				<button class="btn" type="submit">Send message <span aria-hidden="true">↗</span></button>
+			</form>
+		</section>
+	</main>
+
+	<footer><p>© 2026 Arun Tech</p><p>Build with purpose.</p></footer>
+	<script src="app.js"></script>
+</body>
+</html>

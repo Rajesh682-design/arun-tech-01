@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Secure HR administration login for Arun Tech.">
+	<title>HR Admin Login | Arun Tech</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-login-page">
+    <header class="site-header">
+        <a class="logo" href="../index.html" aria-label="Arun Tech home">ARUN <span>TECH</span></a>
+        <nav aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="careers.html">Careers</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+	<main class="admin-login-layout">
+		<section class="admin-login-intro" aria-labelledby="admin-login-title">
+			<p class="eyebrow">Internal access</p>
+			<h1 id="admin-login-title">HR admin<br><em>portal.</em></h1>
+			<p>Review applications, support candidates, and keep the Arun Tech hiring process moving.</p>
+			<div class="admin-login-note" id="admin-login-note">
+				<span class="status-dot" aria-hidden="true"></span>
+				<span>Authorized Arun Tech HR access only</span>
+			</div>
+		</section>
+
+		<section class="admin-login-panel" aria-labelledby="login-form-title">
+			<div class="admin-login-panel-heading">
+				<p class="eyebrow">Sign in</p>
+				<h2 id="login-form-title">Welcome back.</h2>
+			</div>
+
+			<form id="admin-login-form" class="account-form admin-login-form" data-form="adminLogin" aria-describedby="admin-login-note">
+				<div class="form-field">
+					<label for="admin-email">Work email</label>
+					<input id="admin-email" name="email" type="email" autocomplete="username" placeholder="name@aruntech.com" required>
+				</div>
+				<div class="form-field">
+					<label for="admin-password">Password</label>
+					<div class="password-control">
+						<input id="admin-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+						<button class="password-toggle" type="button" data-toggle-password="admin-password" aria-label="Show password">Show</button>
+					</div>
+				</div>
+				<button class="btn admin-login-button" type="submit">Open dashboard <span aria-hidden="true">↗</span></button>
+				<p class="form-note">Your session is used only for this browser prototype.</p>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>© 2026 Arun Tech</p>
+		<p>Build with purpose.</p>
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+</html>

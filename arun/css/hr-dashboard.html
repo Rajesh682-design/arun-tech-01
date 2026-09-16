@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arun Tech HR administration dashboard.">
+    <title>HR Dashboard | Arun Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+    <header class="site-header admin-header">
+        <a class="logo" href="../index.html" aria-label="Arun Tech home">ARUN <span>TECH</span></a>
+        <div class="admin-header-title"><span>Workspace</span><strong>Human resources</strong></div>
+        <nav aria-label="HR navigation">
+            <a href="careers.html">Open roles</a>
+            <a href="contact.html">Public site</a>
+            <button class="nav-button" type="button" data-admin-logout>Log out</button>
+        </nav>
+    </header>
+
+    <main class="admin-dashboard" data-admin-dashboard aria-labelledby="admin-dashboard-title">
+        <section class="admin-welcome">
+            <div>
+                <p class="eyebrow">Tuesday · Arun Tech HR</p>
+                <h1 id="admin-dashboard-title">Good work starts<br><em>with good people.</em></h1>
+                <p>Review candidates, respond to enquiries, and keep every next step visible.</p>
+            </div>
+            <div class="admin-status"><span class="status-dot" aria-hidden="true"></span><span>Workspace live</span></div>
+        </section>
+
+        <section class="admin-summary" data-admin-summary aria-label="HR summary">
+            <article><span>Total applications</span><strong data-count="applications">0</strong><small>All submitted roles</small></article>
+            <article><span>Unique candidates</span><strong data-count="candidates">0</strong><small>Across all applications</small></article>
+            <article><span>New messages</span><strong data-count="messages">0</strong><small>From the contact form</small></article>
+        </section>
+
+        <section class="admin-panels" aria-label="HR review panels">
+            <section class="admin-table admin-applications" aria-labelledby="applicant-records-title">
+                <div class="panel-heading"><div><p class="eyebrow">Review queue</p><h2 id="applicant-records-title">Applicant records</h2></div><span class="card-kicker">Approve or reject</span></div>
+                <div data-application-list data-admin-application-list></div>
+            </section>
+            <section class="admin-table admin-messages" aria-labelledby="contact-messages-title">
+                <div class="panel-heading"><div><p class="eyebrow">Inbox</p><h2 id="contact-messages-title">Contact messages</h2></div><span class="card-kicker">Latest enquiries</span></div>
+                <div data-message-list></div>
+            </section>
+        </section>
+    </main>
+
+    <footer><p>© 2026 Arun Tech</p><p>Internal HR workspace</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>

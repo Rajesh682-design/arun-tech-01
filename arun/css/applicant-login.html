@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to your Arun Tech applicant account.">
+    <title>Applicant Login | Arun Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="../index.html" aria-label="Arun Tech home">ARUN <span>TECH</span></a>
+        <nav aria-label="Applicant navigation">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="careers.html">Careers</a>
+            <a class="nav-cta" href="register.html">Create account <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="form-page" aria-labelledby="applicant-login-title">
+        <section class="form-intro">
+            <p class="eyebrow">Applicant portal</p>
+            <h1 id="applicant-login-title">Welcome<br><em>back.</em></h1>
+            <p>Sign in to track your applications and discover your next opportunity.</p>
+        </section>
+
+        <section class="form-panel" aria-labelledby="applicant-login-form-title">
+            <p class="eyebrow">Sign in</p>
+            <h2 id="applicant-login-form-title">Access your account</h2>
+            <form class="account-form" data-form="applicantLogin">
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <div class="password-control">
+                        <input id="password" name="password" type="password" autocomplete="current-password" required>
+                        <button class="password-toggle" type="button" data-toggle-password="password" aria-label="Show password">Show</button>
+                    </div>
+                </div>
+                <button class="btn" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+                <p class="form-note">New to Arun Tech? <a href="register.html">Create an applicant account</a>.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Arun Tech</p>
+        <p>Build with purpose.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
